@@ -1,9 +1,9 @@
 # Boilerplate for Angular 2 using Webpack 2
 
 ## Commands
-`npm run dev`
-`npm run build`
-`npm run test` (Not Implemented)
+- `npm run dev`
+- `npm run build`
+- `npm run test` (Not Implemented)
 
 ## TODOs
 - Unit Test Implementation
