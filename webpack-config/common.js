@@ -60,5 +60,6 @@ module.exports = {
         }),
         new StyleExtHtmlWebpackPlugin(),
         new webpack.optimize.CommonsChunkPlugin(['vendor', 'polyfills']),
+        new webpack.NoErrorsPlugin()
     ]
 };
