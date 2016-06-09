@@ -8,5 +8,5 @@
 ## TODOs
 - Unit Test Implementation
 - Support multiple platforms (e.g. NativeScript)
-- Tree Shaking (Doesn't seem to work at the moment)
+- Tree Shaking (Rob Wormald is making progress on this but there are blockers with Typescript)
 - Integrate Offline Compiler (when stable/workable)
