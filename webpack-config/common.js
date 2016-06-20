@@ -53,7 +53,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             favicon: 'src/assets/favicon.ico',
-            chunksSortMode: 'dependency'
+            chunksSortMode: 'dependency',
+            cache: false
         }),
         new ScriptExtHtmlWebpackPlugin({
             defaultAttribute: 'defer'
