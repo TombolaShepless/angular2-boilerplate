@@ -1,0 +1,24 @@
+@import '../../assets/scss/main';
+
+.header {
+  width: 100%;
+  height: 75px;
+}
+
+.game-body {
+  width: 100%;
+  height: calc(100% - 75px);
+  background: $teal;
+
+  .call-history {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+
+  .ticket-view {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+}

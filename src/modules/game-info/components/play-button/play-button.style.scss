@@ -1,0 +1,14 @@
+@import '../../../../assets/scss/theme/primary';
+
+.play-button {
+  width: 24%;
+  float: left;
+  font-size: 60px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background: $teal;
+    border-radius: 50px;
+  }
+}

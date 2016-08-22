@@ -1,0 +1,5 @@
+<div *ngIf="number"
+     class="number"
+     [ngClass]="{ marked: number.isMarked }">
+    {{number.value}}
+</div>

@@ -1,0 +1,11 @@
+<section class="game-info-container">
+    <last-call [lastCall]="(calls | async)?.lastCall"></last-call>
+    <prize-panel [prizeName]="'1L'" [prize]="(prizes | async)?.oneLine"></prize-panel>
+    <prize-panel [prizeName]="'2L'" [prize]="(prizes | async)?.twoLines"></prize-panel>
+    <prize-panel [prizeName]="'FH'" [prize]="(prizes | async)?.fullHouse"></prize-panel>
+    <stake-selection [disabled]="(game | async)?.inPlay"
+                     [stake]="(prizes | async)?.stake"
+                     (onIncrease)="store.dispatch($event)"
+                     (onDecrease)="store.dispatch($event)"></stake-selection>
+    <play-button [disabled]="(game | async)?.inPlay" (onPlay)="onPlay()"></play-button>
+</section>

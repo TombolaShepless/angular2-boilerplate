@@ -1,0 +1,11 @@
+<section class="header">
+    <game-info-container></game-info-container>
+</section>
+<section class="game-body">
+    <section class="call-history">
+        <call-history></call-history>
+    </section>
+    <section class="ticket-view">
+        <ticket *ngFor="let ticket of tickets | async" [ticket]="ticket"></ticket>
+    </section>
+</section>

@@ -2,10 +2,13 @@ const path = require('path');
 const merge = require('webpack-merge');
 const validate = require('webpack-validator');
 const COMMON_CONFIG = require('./webpack-config/common');
-const Joi = validate.Joi
+const Joi = validate.Joi;
 const schemaExtension = Joi.object({
-    sassLoader: Joi.any()
-})
+    sassLoader: Joi.any(),
+    resolve: {
+        plugins: Joi.any()
+    }
+});
 
 var config;
 
