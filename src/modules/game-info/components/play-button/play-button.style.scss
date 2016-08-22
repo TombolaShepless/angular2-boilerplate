@@ -1,11 +1,12 @@
 @import '../../../../assets/scss/theme/primary';
 
 .play-button {
-  width: 24%;
+  width: 22%;
   float: left;
-  font-size: 60px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
+  margin: 10px 0;
 
   &:hover {
     background: $teal;

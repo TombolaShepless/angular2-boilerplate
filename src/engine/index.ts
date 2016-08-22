@@ -103,8 +103,10 @@ class Game {
     }
 
     speak(message) {
-        let msg = new SpeechSynthesisUtterance(message);
-        speechSynthesis.speak(msg);
+        if (SpeechSynthesisUtterance) {
+            let msg = new SpeechSynthesisUtterance(message);
+            speechSynthesis.speak(msg);
+        }
     }
 }
 

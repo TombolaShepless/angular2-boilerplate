@@ -1,6 +1,6 @@
 <div class="stake-selection">
     <div>Stake</div>
     <span class="toggle" (click)="decrease()" [style.visibility]="((stake === 1 || disabled) ? 'hidden' : 'visible')"><<</span>
-    <span>{{stake | currency}}</span>
+    <span>{{stake | currency:'GBP':true:'1.0-0'}}</span>
     <span class="toggle" (click)="increase()" [style.visibility]="((stake === 10 || disabled) ? 'hidden' : 'visible')">>></span>
 </div>
